@@ -1,0 +1,107 @@
+*{
+    text-align: center;
+    padding-bottom: 15px;
+}
+#tablita{
+    margin:30px auto;
+    width: 600px auto;
+    color: rgb(151, 0, 0);
+    font-weight: 900;
+}
+table{
+    width: 100%;
+    background-color: rgb(255, 255, 255) ;
+}
+a{
+    text-decoration: none;
+    color: #020033;
+    font-weight: 900;
+
+
+}
+tr,td{
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    font-weight: 900;
+
+}
+th{
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    background-color: rgb(145, 145, 145);
+}
+body{
+    background-position: center center;
+	background-attachment: fixed;
+    background-size: cover;	
+	background-repeat: no-repeat;
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../IMG/aa.jpg);}
+strong{
+    color: white;
+    font-size: 50px;
+}	
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 20px;
+    width: 50%;
+}
+
+.my-class {
+    background: rgb(3, 0, 25);
+
+}
+.Titulo_usu{
+    padding-top: 5%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/* CSS */
+.button-35 {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+.bgimgg{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color:rgba(0, 0, 0, 0.185)
+}

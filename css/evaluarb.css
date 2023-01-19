@@ -1,0 +1,110 @@
+
+body{
+ 
+    background-attachment: fixed;
+    background-size: cover;	
+    background-repeat: no-repeat;
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../IMG/aa.jpg);
+     
+    }
+.conoc{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 650px;
+}
+.conocc{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 450px;
+}
+.pumcon{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 100px;
+}
+.pumconn{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 100px;
+}
+@media(min-width:300px) {
+    .tit h1{
+    font-size: 1px;
+  }
+    
+}
+@media(max-width:500px) {
+    .conoc{
+        padding-top: 50px;
+        flex-direction: column;
+        width: 100%;
+    }
+    #bienvenida{
+        display:none;
+    }
+    .butto{
+        width: 30px;
+    }
+    .imggg{
+        width: 40%;
+    }
+    .titulo{
+        font-size: 13px;
+    }
+        table{
+        width: 5%;
+        height: 5px;
+    
+    }
+    btm
+    .btn-success{
+        font-size: 10px;
+        width: 100%;
+    }
+    table{
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-size: 10px;
+    }
+
+    
+}
+
+.h3nom{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@media(min-width:800px) {
+    .imggg{
+        width:150px;
+    }
+}   
+.bgimg{
+  background-color: rgba(0, 0, 0, 0.384);
+  border-radius: 50%;
+}
+
+
+.botoncito{
+    float: top;
+   
+}
+

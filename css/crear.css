@@ -1,0 +1,191 @@
+
+  * {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-position: center center;
+    background-attachment: fixed;
+      background-size: cover;	
+    background-repeat: no-repeat;
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../IMG/aa.jpg);}
+.container{ 
+    margin-top: 25px;
+    padding: 25px;
+
+    background-color: rgba(0, 0, 0, 0.507);
+
+}
+
+.formulario{
+  display:grid;
+}
+.imagen img{
+  float:left;
+  padding-left: 14px;
+	padding-top: 25px;
+	height: 15rem;
+	width: 15rem;
+	border-radius: 20%;
+}
+.imagen2 img{
+  float:right;
+  padding-left: 14px;
+	padding-top: 25px;
+	height: 15rem;
+	width: 15rem;
+	border-radius: 20%;
+}
+p{
+  float:left;
+}
+input{
+    color: #121212;
+}
+.but1{
+    padding-left: 24px;
+
+}
+h1{
+  font-family: 'Balsamiq Sans', cursive;
+}
+option{
+  float: left;
+}
+.but2{
+    margin-right: 15px;
+}
+
+#rol{
+    color: #121212;
+}
+.bottona button{
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+div.w-33 {
+  width: 100%;
+
+}
+div#carrera select#carrera{
+  float: left;
+}
+
+div.center {
+  text-align: center;
+}
+div.carrera{
+
+  float: left;
+}
+.button-35 {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s,-webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 170px;
+  }
+  
+  .button-35.boton2{
+    float: left;
+    width: 150px;
+  }
+  .button-35:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  }
+
+
+  
+  
+  .form-register {
+    width: 700px;
+    background-color:rgba(202, 4, 4, 0.74);
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+ 
+    box-shadow: 7px 13px 37px #000;
+  }
+  h2{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .controls__noview{
+    width: 100%;
+  }
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #f30000;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #ec2300;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }

@@ -1,0 +1,68 @@
+body{
+	background-position: center center;
+	background-attachment: fixed;
+    background-size: cover;	
+	background-repeat: no-repeat;
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../IMG/aa.jpg);
+  }
+
+
+
+  .conocc{
+    background-color:rgba(245, 245, 245, 0.993);
+    margin: 0 auto;
+    width: 65%;
+    margin-top: 150px;
+    border-radius: 12px;
+    height: 730px;
+  }
+  .pumconn{
+    background-color:rgba(245, 245, 245, 0.993);
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 150px;
+    border-radius: 12px;
+    height: 100px;
+  }
+
+  @media(max-width:600px) {
+    .conocc{
+      width: 100%;
+      flex-direction: column;
+      height: 100%;
+    }
+    .butto{
+      width: 30px;
+    }
+    .pumconn{
+      width: 100%;
+    }
+
+      
+  }
+
+  @media(max-width:780px) {
+
+    .conocc{
+      width: 100%;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+@media(min-width:800px) {
+
+    .pumconn{
+      background-color:rgba(245, 245, 245, 0.993);
+      margin: 0 auto;
+      width: 30%;
+      margin-top: 150px;
+      border-radius: 12px;
+      height: 100px;
+  }
+
+}

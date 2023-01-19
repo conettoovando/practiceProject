@@ -1,0 +1,111 @@
+
+body{
+ 
+    background-attachment: fixed;
+    background-size: cover;	
+    background-repeat: no-repeat;
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../IMG/aa.jpg);
+     
+    }
+.conoc{
+  background-color:rgba(163, 19, 19, 0.993);
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 450px;
+}
+.conocc{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 450px;
+}
+.pumcon{
+  background-color:rgba(0, 0, 0, 0.479);
+  margin: 0 auto;
+  color: white;
+  width: 80%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 100px;
+}
+.container{
+	background-color:rgba(255, 255, 255, 0.5);
+}
+.pumconn{
+  background-color:rgba(226, 5, 5, 0.993);
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 100px;
+}
+@media(min-width:100px) {
+    .img-fluid{
+        margin-left:310px;
+      }
+    
+}
+@media(min-width:920px) {
+  .conoc{
+    
+    height: 100%;
+    flex-direction: column;
+  }
+  .movil{
+    display: none;
+  }
+  input{
+    width: 300px;
+    margin-bottom: 40px;
+  }
+  .img-fluid{
+    margin-left:580px;
+  }
+  
+ 
+}
+@media(min-width:1000px) {
+    .conoc{
+        width: 80%;
+    }
+    .img-fluid{
+        margin-left:19920px;
+      }
+}
+@media(min-width:921px) {
+    .conoc{
+        width: 90%;
+    }
+    .img-fluid{
+        margin-left:400px;
+      }
+    
+}
+@media(min-width:1200px) {
+    .img-fluid{
+        margin-left:580px;
+      }
+    
+}
+table {
+    /* Para centrar usamos "auto" en la alineación horizontal */
+    margin: 0 auto;
+        /*Lo siguiente es para los bordes*/
+    border-collapse: collapse;
+}
+table,
+th,
+td {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+    border: 1px solid black;
+}

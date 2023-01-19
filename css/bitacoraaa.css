@@ -1,0 +1,141 @@
+
+body{
+ 
+    background-attachment: fixed;
+    background-size: cover;	
+    background-repeat: no-repeat;
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../IMG/aa.jpg);
+     
+    }
+.conoc{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 450px;
+}
+
+.pumcon{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 100px;
+}
+
+.lax{
+    
+    margin-top: 33%;
+}
+
+
+@media(max-width:450px) {
+    .conoc{
+        padding-top: 50px;
+        flex-direction: column;
+        width: 100%;
+    }
+    #bienvenida{
+        display:none;
+    }
+    .butto{
+        width: 30px;
+    }
+    .imggg{
+        width: 120px;
+    }
+    .titulo{
+        font-size: 13px;
+    }
+        table{
+        width: 5%;
+        height: 5px;
+    
+    }
+    .btn-success{
+        font-size: 10px;
+        width: 100%;
+    }
+    table{
+        margin: 0 auto;
+        border-collapse: collapse;
+        font-size: 10px;
+    }
+
+    
+}
+
+.bgimg{
+  background-color: rgba(0, 0, 0, 0.384);
+  border-radius: 50%;
+}
+
+
+.botoncito{
+    float: top;
+   
+}
+@media(max-width:320px) {
+    .conoc{
+        width: 100%;
+        height: 100%;
+    }
+    .bgimg{
+        margin-top: 15px;
+    }
+
+}
+@media(min-width:325px) {
+    .conoc{
+        width: 100%;
+        height: 550px;
+    }
+    .botonn{
+        margin-bottom: 10px;
+    }
+   
+    
+}
+@media(min-width:450px) {
+    .conoc{
+        width: 100%;
+        height: 550px;
+    }
+   
+    .botonn{
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 450px;
+        margin-left: 10px;
+        
+    }
+
+}
+@media(min-width:700px) {
+    .conoc{
+        width: 60%;
+        height: 550px;
+    }
+    h1{
+        font-size: 10px;
+    }
+    .botonn{
+        margin-left: 10px;
+        margin-bottom: 450px;
+        width: 120%;
+    }
+    .imggg{ 
+        width: 60%;
+    }
+    
+}
+

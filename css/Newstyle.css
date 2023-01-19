@@ -1,0 +1,117 @@
+
+body{
+	background-position: center center;
+	background-attachment: fixed;
+    background-size: cover;	
+	background-repeat: no-repeat;
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../IMG/aa.jpg);}
+.bienvenida{
+	background-color: rgba(169, 4, 40, 0.705);
+	position: top;
+}
+.containerd{
+	background-color: #121212;
+}
+.imagen img{
+	float:left;
+	padding-left: 2px;
+	padding-top: 1px;
+	height: 4rem;
+	width: 5rem;
+	border-radius: 20%;
+  }
+.bienvenida h2{
+    padding-top: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+	padding: 20px;
+	padding-right: 150px;
+}
+.titulocar h3{
+	color: #121212;
+}
+.cuadroboton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15%;
+
+}
+.button{
+    width: 250px;
+    font-size: xx-large;
+}
+.botones-izquierda{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 350px;
+	height: 20rem;
+	background-color: rgba(0, 0, 0, 0.685);	
+	text-align: center;
+    border-radius: 20%;
+}
+.Titulo-menu{
+	color: #fff;
+	margin-top: 15%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	border-bottom: 2px solid #ebebeb;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+}
+.Titulo-menu h1{
+	margin-top: 25px;
+}
+
+.button-35 {
+	align-items: center;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+	box-sizing: border-box;
+	color: #121212;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: Inter,sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	justify-content: center;
+	line-height: 1;
+	margin: 0;
+	outline: none;
+	padding: 1rem 1.2rem;
+	text-align: center;
+	text-decoration: none;
+	transition: box-shadow .2s,-webkit-box-shadow .2s;
+	white-space: nowrap;
+	border: 0;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  }
+  
+  .button-35:hover {
+	box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+  }
+
+
+td a{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+a.editar:hover{
+    color: rgb(169,4,41);
+
+}
+a.borrar:hover{
+    color: rgb(0, 36, 112);
+
+}

@@ -1,0 +1,15 @@
+
+body{
+ 
+    background-attachment: fixed;
+    background-size: cover;	
+    background-repeat: no-repeat;
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../IMG/aa.jpg);
+     
+    }
+    

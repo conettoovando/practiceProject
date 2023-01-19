@@ -1,0 +1,77 @@
+
+body{
+ 
+    background-attachment: fixed;
+    background-size: cover;	
+    background-repeat: no-repeat;
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../IMG/aa.jpg);
+     
+    }
+.conoc{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 450px;
+}
+.conocc{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 450px;
+}
+.pumcon{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 100px;
+}
+.pumconn{
+  background-color:rgba(245, 245, 245, 0.993);
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 150px;
+  border-radius: 12px;
+  height: 100px;
+}
+@media(max-width:450px) {
+  .conoc{
+    padding-top: 350px;
+   flex-direction: column;
+  }
+  #contador {
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+  }
+  #bienvenida{
+    display:none;
+  }
+  .conocc{
+
+    width: 100%;
+    flex-direction: column;
+  }
+  .butto{
+    width: 30px;
+  }
+    
+}
+.bgimg{
+  background-color: rgba(0, 0, 0, 0.384);
+  border-radius: 50%;
+}
+
+.imggg{
+  width: 220px;
+}

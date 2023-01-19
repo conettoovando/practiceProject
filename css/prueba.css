@@ -1,0 +1,41 @@
+h1{
+  color: white;
+  text-align: center;
+  
+}
+body{
+  background-attachment: fixed;
+  background-size: cover;	
+  background-repeat: no-repeat;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../IMG/aa.jpg);}
+
+  .bg{
+    width: 200px;
+    border-radius:100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.486);
+    margin-bottom: 10px;
+  }
+
+.bgli{
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+@media(max-width:700px) {
+  .bgli{
+    background-color:red;
+    font-size: 10px;
+  }
+
+    
+}
+@media(min-width:701px) {
+  li{
+    list-style-type: none
+  }
+}
