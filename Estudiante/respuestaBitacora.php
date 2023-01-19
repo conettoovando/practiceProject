@@ -75,13 +75,13 @@ if ($newData == null){
             
             <div class="consus mt-1 " style="width:100%">
             <?php
-
+            $consultaSQL = "SELECT estudiantes.rutSupervisor, supervisor.email, informacion.* FROM estudiantes INNER JOIN supervisor INNER JOIN informacion WHERE estudiantes.rutEstudiante = '$datosAlumno[rutEstudiante]' AND supervisor.RutSupervisor = estudiantes.rutSupervisor and informacion.email = supervisor.email";
+            $informacionSupervisor = $conexion->prepare($consultaSQL);
+            $informacionSupervisor -> execute();
+            $informacionSupervisor = $informacionSupervisor->fetch();
             ?>
             <h1 class="text-justify mb-5">
-                
-                
-            
-            Docente: <?php echo $datosAlumno['Nombre'].' '.$datosAlumno['ApellidoPat'] ?></h1>
+            Docente: <?php echo $informacionSupervisor['Nombre'].' '.$informacionSupervisor['ApellidoPat'] ?></h1> 
                 <form method="post">
                         
                         <table class="table">

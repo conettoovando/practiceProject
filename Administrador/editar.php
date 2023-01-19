@@ -392,7 +392,7 @@ if (isset($usuario) && $usuario) {
 				<label>Facultad</label>
 				<input type="text" id="idFacultad" name="Facultad" class="form-control" value="<?= escapar($DatosCarrera['Facultad']) ?>">
 			</div>
-			<div class="form-group mt-2">
+			<div class="form-group mt-2" id='divEmpresa' style="display: none;">
 				<label >Rut Empresa</label>
 				<input type="text" name="rutEmpresa" id="rutEmpresa" value="<?= escapar($usuario['rutEmpresa']) ?>" class="form-control">
 			</div>

@@ -83,7 +83,7 @@
 		<div class="form-group row" id = 'divPassword'>
 			<label for="Appeterno" class="col-sm-2 col-form-label">Ingrese la contraseña</label>
 			<div class="col-sm-10">
-			<input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
+			<input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña" required>
 			</div>
 		</div>
 		<div class="form-group row">

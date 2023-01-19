@@ -141,19 +141,9 @@
             $pdf->Cell(0,10,$datos,0,1,'C');
             $cont += 1;
         }
-        $route = "../upload/$mail/";
+        $route = "../upload/$mail";
         $pdf->Output($route.'file.pdf', 'f');
-
-        header ('location: $route.file.pdf');
-
-    /*  exporta un archivo TXT:
-        $informe = fopen("upload/".$mail."/InformeGenerado.txt", "w");
-        foreach($array as $rd){
-            $Leerinforme = fopen("upload/".$rd['mail']."/".$rd['fecha']."/bitacora.txt" , "rb");
-            $datos = fread($Leerinforme,filesize("upload/".$rd['mail']."/".$rd['fecha']."/bitacora.txt"));
-            fwrite($informe, "informe de ".$_SESSION['Usuarios']['user']."\n\n".$rd['fecha']. "\n". $datos ."\n\n");  
-        }
-        fclose($informe); */
+        echo "<script>window.location.href='$route/file.pdf';</script>";
     }
     
 	}catch(PDOException $error){
