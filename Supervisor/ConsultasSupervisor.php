@@ -12,7 +12,7 @@ if(isset($_POST['VolverAtras'])){
 
 if (isset($_POST['CerrarSession'])){
     session_destroy();
-    header('location: session.php');
+    header('location: ../session.php');
 }
 
 ?>

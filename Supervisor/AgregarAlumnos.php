@@ -56,7 +56,7 @@ if (isset($_POST['Enviar'])){
                    
                        
                         <button type="submit" class="btn btn-success mt-3" style="width:30%" name="Enviar" > Enviar</button><br>
-                        <button type="button" class="btn btn-warning btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#myModal" style="font-weight:bold;width:30%;">Ver alumnos sin supervisor</button><br>
+                        <button type="button" class="btn btn-warning btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#myModal" style="font-weight:bold;width:30%;font-size:15px;">Ver alumnos sin supervisor</button><br>
                         <button type="button" class="btn btn-warning mt-3" style="width:30%" onclick="location.href='Supervisor.php'" >Volver atras</button>
                     </div>
                 <br>
@@ -72,7 +72,7 @@ if (isset($_POST['Enviar'])){
 
         <!-- Modal Header -->
         <div class="modal-header">
-            <h4 class="modal-title">Respuesta enviada</h4>
+            <h4 class="modal-title">Alumnos</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
 

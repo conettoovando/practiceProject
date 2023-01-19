@@ -72,7 +72,7 @@ if (isset($_POST["enviar"])){
                         <tr class="">
                             <td><center><?php echo $dt['fechaBitacora']; ?></center></td>
                             <td><center><?php echo $dt['descripcionBitacora']; ?></center></td>
-                            <td><center><a href="<?='echo $dt[ruta];'?>">Descargar Contenido</a></center></td>
+                            <td><center><a href="<?='$dt[ruta];'?>">Descargar Contenido</a></center></td>
                         </tr>
                         <?php
                     }

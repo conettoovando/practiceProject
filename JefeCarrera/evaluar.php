@@ -98,7 +98,7 @@ if(isset($_POST['Enviar'])){
                     $rutaVolver = "session.php";
                 }
                 ?>
-                <a href="<?=$ConsultaInforme['ruta'] ?>" name = 'Volver' class="btn btn-warning btn-lg mt-2 butto" style="font-weight:bold;font-size:15px; height:60px;width:100%;">Descargar Informe</a>
+                <a href="<?=$ConsultaInforme['ruta'] ?>" name = 'Volver' class="btn btn-warning btn-lg mt-2 butto" style="font-weight:bold;font-size:15px; height:60px;width:100%; display:flex;align-items:center;">Descargar Informe</a>
                 <input type="button" value="Volver" name = 'volver' class="btn btn-warning btn-lg mt-4 butto" style="font-weight:bold;font-size:15px; height:60px;width:100%;" onclick="location.href='<?=$rutaVolver?>'">
                 <form method="post">              
                     <input type="submit" value="Cerrar Sesíon" name="cerrar" class="btn btn-danger btn-lg mt-4  butto" style="font-weight:bold;font-size:15px;  height:60px;width:100%;"><br> 
@@ -121,9 +121,9 @@ if(isset($_POST['Enviar'])){
                                         </label>
                                     </div>
                                     <div class="form-check mt-4" onchange="studCheck()">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="check2" id="check2" value="2" required>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="check2" id="check2" value="2">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Minimo de 50 bitacoras enviadas (Total actual: <?php echo $totalBitacoras['totalBitacora'] ?>)
+                                            Minimo de 15 bitacoras enviadas (Total actual: <?php echo $totalBitacoras['totalBitacora'] ?>)
                                         </label>
                                     </div>
                                     <div class="form-check mt-4" onchange="studCheck()">

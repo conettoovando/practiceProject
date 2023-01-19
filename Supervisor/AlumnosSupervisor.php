@@ -25,6 +25,12 @@ if(isset($_POST['volver'])){
 </head>
 <body>
 
+<script>
+function myFunction() {
+  alert("ESTE ALUMNO YA FUE EVALUADO\ncualquier dato enviado reemplazará la informacion enviada previamente.");
+}
+</script>
+
 
 <div class="d-flex align-items-center justify-content-around text-center conoc mt-4">
     
@@ -68,7 +74,7 @@ if(isset($_POST['volver'])){
             if($alumnos["calificacionSupervisor"] == 'A' || $alumnos["calificacionSupervisor"] == 'R'){
                 ?>
                 <form method="get">
-                <td><a href="<?='../JefeCarrera/evaluar.php?Alumno='.$alumnos["IdInforme"]?>" style="text-decoration:none; color:black; font-weight:bold;">📒 Ya evaluado</a></td>
+                <td><a href="<?='../JefeCarrera/evaluar.php?Alumno='.$alumnos["IdInforme"]?>" onclick="myFunction()" style="text-decoration:none; color:black; font-weight:bold;">📒 Ya evaluado</a></td>
                 <?php
             }
             elseif ($alumnos['flag'] === 1){

@@ -48,8 +48,8 @@ if(isset($_POST['Enviar'])){
     <div class="d-flex align-items-center justify-content-around text-center conoc mt-5">
         <div class="d-flex flex-column justify-content-center">
             <form method="post">
-                <h1><span> <?php echo "La duda es: <br>".$DudaAlumno?></span></h1>
-                <h4>Respuesta a: <?php echo " ".$RutAlumno?></h4>
+                <p><span> <?php echo "La duda es: <br>".$DudaAlumno?></span></p>
+                <p>Respuesta a: <?php echo " ".$RutAlumno?></p>
                     
                 <div class="bgimg">
                     <img src="../IMG/ayudar.png" alt="fotoayuda" class="img-fluid imggg">

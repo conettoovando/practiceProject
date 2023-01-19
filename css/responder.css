@@ -109,8 +109,9 @@ div.container {
         width: 150px;
     }
     button{
-        height: 105px;
+        height: 110px;
         width:auto;
+       
     }
     .container-fluid.row.card{
         width: 10px;

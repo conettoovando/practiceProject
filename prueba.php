@@ -57,7 +57,11 @@ if (isset($_POST['cerrar_session'])){
     
         <div class="card mt-1" style="background-color:rgb(169,4,41); width:80%; margin:0 auto;">
       
-            
+        <form method="post">
+            <div>
+                <button type="submit"  class="mt-3 btn btn-warning btn-lg" style="font-weight:bold;"name="cerrar_session">Cerrar Sesión</button>
+            </div>
+        </form>
             <div class="bg text-center" id="bgimg">
                 <img src="IMG/validacion.png" alt="" srcset="" style="width:150px;margin:0 auto;" class="image-fluid mb-4" >
             </div>
@@ -75,11 +79,7 @@ if (isset($_POST['cerrar_session'])){
         </div>
     </div> 
 </div>
-<form method="post">
-    <div>
-        <button type="submit" name="cerrar_session">Cerrar Session</button>
-    </div>
-</form>
+
 
 
 
