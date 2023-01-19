@@ -72,7 +72,24 @@ if (isset($_POST["enviar"])){
                         <tr class="">
                             <td><center><?php echo $dt['fechaBitacora']; ?></center></td>
                             <td><center><?php echo $dt['descripcionBitacora']; ?></center></td>
-                            <td><center><a href="<?='$dt[ruta];'?>">Descargar Contenido</a></center></td>
+                            <?php 
+                            if ($dt['ruta'] !== 'Sin Archivo'){
+                                ?>
+                                <td><center><a href="<?=$dt['ruta']?>">Descargar Contenido</a></center></td>
+                                <?php
+                            }else{
+                                echo "
+                                    <script>
+                                        function sinArchivo(){
+                                            window.alert('No se ha subido un arhcivo para la fecha $dt[fechaBitacora]')
+                                        }
+                                    </script> "
+                                ?>
+                                    <td><center><a href="#" onclick="sinArchivo()">Descargar Contenido</a></center></td>
+                                <?php
+                            }
+                            ?>
+                            
                         </tr>
                         <?php
                     }
