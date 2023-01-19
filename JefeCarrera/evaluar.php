@@ -77,6 +77,7 @@ if(isset($_POST['Enviar'])){
     <link rel="stylesheet" href="../css/evaluar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="../java/checkbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <title>Evaluacion<?php echo " ".$nombreAlumno; ?></title>
 </head>
@@ -98,14 +99,13 @@ if(isset($_POST['Enviar'])){
                     $rutaVolver = "session.php";
                 }
                 ?>
-                <a href="<?=$ConsultaInforme['ruta'] ?>" name = 'Volver' class="btn btn-warning btn-lg mt-2 butto" style="font-weight:bold;font-size:15px; height:60px;width:100%; display:flex;align-items:center;">Descargar Informe</a>
+                <a href="<?=$ConsultaInforme['ruta'] ?>" name = 'Volver' class="btn btn-warning btn-lg mt-2 butto" style="font-weight:bold;font-size:15px; height:60px;width:100%; display:flex;align-items:center;">Descargar Informe</a><br>
+                <button type="button" class="btn btn-warning btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#myModal" >Información Centro de practica</button><br>
                 <input type="button" value="Volver" name = 'volver' class="btn btn-warning btn-lg mt-4 butto" style="font-weight:bold;font-size:15px; height:60px;width:100%;" onclick="location.href='<?=$rutaVolver?>'">
                 <form method="post">              
                     <input type="submit" value="Cerrar Sesíon" name="cerrar" class="btn btn-danger btn-lg mt-4  butto" style="font-weight:bold;font-size:15px;  height:60px;width:100%;"><br> 
                 </form>
             </div>
-            
-
             <div class="consus mt-3">
                 <form method="post">
                     <div class="row">
@@ -164,7 +164,54 @@ if(isset($_POST['Enviar'])){
                             
 </div>
 
+            <!-- Button to Open the Modal -->
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
 
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h4 class="modal-title">Alumnos</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body" >
+            <?php
+            $consultaSQL = "SELECT estudiantes.rutEmpresa, centro.* FROM estudiantes INNER JOIN centro WHERE rutEstudiante ='$ConsultaInforme[rutEstudiante]' and centro.rut_empresa = estudiantes.rutEmpresa";
+            $array = $conect->prepare($consultaSQL);
+            $array->execute();
+            $resultado= $array->fetch();
+            ?>
+            <ul style="list-style: none;">
+                <li>
+                    Nombre Empresa : <?= $resultado['descripcion_empresa'] ?>
+                </li>
+                <li>
+                    Rut Empresa : <?= $resultado['rut_empresa'] ?>
+                </li>
+                <li>
+                    Email Empresa : <?= $resultado['email_empresa'] ?>
+                </li>
+                <li>
+                    Nombre Jefe a cargo : <?= $resultado['nombreJefe'] ?>
+                </li>
+                <li>
+                    Telefo Jefe a cargo : <?= $resultado['telefonoJefe'] ?>
+                </li>
+            </ul>
+            <!--GET A LA RESPUESTA ENVIADA-->
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+        </div>
+    </div>
+</div>            
 
 
 
